@@ -9,7 +9,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { Login1Component } from './pages/login1/login1.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 import { CupanimationComponent } from './pages/cupanimation/cupanimation.component';
-import { BasicjsComponent } from './pages/basicjs/basicjs.component';
+import { BasictsComponent } from './pages/basicts/basicts.component';
 
 const routes: Routes = [
   {
@@ -40,7 +40,7 @@ const routes: Routes = [
     path:'cupanimation',component:CupanimationComponent
   },
   {
-    path:'basicjs',component:BasicjsComponent
+    path:'basicts',component:BasictsComponent
   }
 ];
 
