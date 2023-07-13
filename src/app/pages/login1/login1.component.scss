@@ -1,0 +1,83 @@
+.main_class{
+    width: 100%;
+    height: calc(100vh - 78.4px);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.centerdiv{
+    width: 450px;
+    height: 450px;
+    background-color:#3769D5;
+    
+}
+
+.login{
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    clip-path: circle(30% at 50% 50%);
+    position: relative;
+    top: 10px;
+    left: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+remember-forgot{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    text-align: center;
+    margin: -15px 0 15px;
+}
+
+.textbox{
+   margin-left: 40px;
+}
+
+input[type=text],input[type=text]{
+    width: 20rem;
+    height: 2rem;
+    background-color: rgb(18, 226, 18);
+    background: transparent;
+    border: none;
+    border-bottom: 2px dotted #fff;
+}
+
+  ::placeholder{
+    color:#fff;
+    padding-left: 30px;
+}
+
+  
+
+
+button{
+    width: 15rem;
+    height: 2rem;
+    background-color:#3769D5;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 100px;
+    border-color: #fff;
+    color: white;
+
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+
+
+a{
+    color: white;
+}
+
+label{
+    color:white;
+}
