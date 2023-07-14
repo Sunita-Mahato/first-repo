@@ -6,21 +6,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./basicts.component.scss']
 })
 export class BasictsComponent {
-  public name:string;
+  /*public name:string;
   public email="abc@.com"
   public constructor(){
     this.name="";
-   
-
     if(this.name){
       console.log(this.name);
     }
     else{
-console.log("name is empty")
+      console.log("name is empty")
     }
-
-    
-
   }
 
+  public valueChange(){
+    console.log(this.email);
+    this.email="def@gmail.com"
+    console.log(this.email);
+  }*/
+  /*public color="green";
+  public bgColor="yellow";
+
+  public colorChange(){
+  this.color="yellow";
+  this.bgColor="green";
+
+  }*/
+  public color="red";
+  public bgColor="grey";
+  public mainDiv="blue"
+
+  public moveColor(){
+    this.color="grey"
+    this.bgColor="red"
+    this.mainDiv="blue";
+  }
 }

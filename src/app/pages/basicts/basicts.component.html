@@ -1,6 +1,18 @@
-<div>{{email}}</div>
+<!--<div>{{email}}</div>
 <div *ngIf="name">name is true</div>
 <div class="normal class">normal class</div>
 <div class="row {{email}}">variable class</div>
-<div class="col {{name ? 'class_true':'class_false'}}">class biding</div>
-<div [class]="'row2 '+ email">data biding</div> 
+<div class="col {{name ? 'class_true':'class_false'}}">class binding</div>
+<div [class]="'row2 '+ email">data binding</div> 
+
+<button (click)="valueChange()">click event</button>-->
+
+
+
+<!--<div [style]="'color:'+ color+'; background-color:'+bgColor +';'">red</div>
+<button (click)="colorChange()">click</button>-->
+<div [style]="'background-color:'+ mainDiv+';'">
+<div [style]="'color:'+ color+'; background-color:' +bgColor +';'"> hello</div>
+<button (click)="moveColor()">click here</button>
+</div>
+
