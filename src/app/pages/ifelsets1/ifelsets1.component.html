@@ -1,0 +1,42 @@
+<!-- <h1>Using Ngif</h1> 
+<h2><input type="radio"name="radio1" (click)="changevalue(true)">True<br></h2>
+<h3><input type="radio"name="radio1" (click)="changevalue(false)">False</h3
+    >
+<div *ngIf="isvalid">
+    This is valid data
+</div>
+
+<div *ngIf="!isvalid">
+    This is not valid data
+</div>-->
+
+
+<!-- <h1>Using *Ngif with else</h1> 
+<h2><input type="radio"name="radio1" (click)="changevalue(true)">True<br></h2>
+<h3><input type="radio"name="radio1" (click)="changevalue(false)">False</h3>
+<div *ngIf="isvalid ; else elseblock">
+    This is valid data
+</div>
+<ng-template #elseblock>
+<div>
+    This is not valid data using else block
+</div>
+</ng-template>-->
+
+
+
+
+<h1>Using *Ngif with then and else</h1> 
+<h2><input type="radio"name="radio1" (click)="changevalue(true)">True<br></h2>
+<h3><input type="radio"name="radio1" (click)="changevalue(false)">False</h3>
+<div *ngIf="isvalid;then thenblock; else elseblock"></div>
+
+<ng-template #thenblock>
+    <div>This is valid data - then block</div>
+</ng-template>
+
+<ng-template #elseblock>
+<div>
+    This is not valid data using else block
+</div>
+</ng-template>

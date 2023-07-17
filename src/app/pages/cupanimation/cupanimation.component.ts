@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./cupanimation.component.scss']
 })
 export class CupanimationComponent {
+  Cdata:any;
+  getdata(val:any){
+    this.Cdata=val;
+
+  }
 
 }

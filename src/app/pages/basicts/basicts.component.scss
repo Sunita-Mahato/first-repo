@@ -4,9 +4,17 @@ div{
     display: flex;
     justify-content: center;
     place-items: center;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bold;
     border:2px solid red;
     
+}
+
+button{
+    width:20vw;
+    height:10vh ;
+    font-size: 30px;
+    justify-content: center;
 }
 
 

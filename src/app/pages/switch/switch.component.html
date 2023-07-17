@@ -1,0 +1,21 @@
+ <h1>Using ngSwitch</h1>
+<div [ngSwitch]="name">
+    <div *ngSwitchCase="'Dipu'">Hello Dipu</div>
+    <div *ngSwitchCase="'Minu'">Hello Minu</div>
+    <div *ngSwitchCase="'Sinu'">Hello Sinu</div>
+    <div *ngSwitchCase="'Alok'">Hello Alok</div>
+    <div *ngSwitchCase="'Banty'">Hello Banty</div>
+    <div *ngSwitchDefault>No Data Matched</div> 
+    </div>
+
+
+
+Enter Your Name:<input type="text" #txtname (keyup)="0"/>
+    <div [ngSwitch]="txtname.value">
+        <div *ngSwitchCase="'Dipu'">Hello Dipu</div>
+        <div *ngSwitchCase="'Minu'">Hello Minu</div>
+        <div *ngSwitchCase="'Sinu'">Hello Sinu</div>
+        <div *ngSwitchCase="'Alok'">Hello Alok</div>
+        <div *ngSwitchCase="'Banty'">Hello Banty</div>
+        <div *ngSwitchDefault>No Data Matched</div> 
+        </div>

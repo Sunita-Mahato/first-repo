@@ -10,6 +10,11 @@ import { Login1Component } from './pages/login1/login1.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 import { CupanimationComponent } from './pages/cupanimation/cupanimation.component';
 import { BasictsComponent } from './pages/basicts/basicts.component';
+import { IfelsetsComponent } from './pages/ifelsets/ifelsets.component';
+import { Ifelsets1Component } from './pages/ifelsets1/ifelsets1.component';
+import { SwitchComponent } from './pages/switch/switch.component';
+import { ForComponent } from './pages/for/for.component';
+import { StyleComponent } from './pages/style/style.component';
 
 const routes: Routes = [
   {
@@ -41,6 +46,21 @@ const routes: Routes = [
   },
   {
     path:'basicts',component:BasictsComponent
+  },
+  {
+    path:'ifelsets',component:IfelsetsComponent
+  },
+  {
+    path:'ifelsets1',component:Ifelsets1Component
+  },
+  {
+    path:'switch',component:SwitchComponent
+  },
+  {
+    path:'for',component:ForComponent
+  },
+  {
+    path:'style',component:StyleComponent
   }
 ];
 

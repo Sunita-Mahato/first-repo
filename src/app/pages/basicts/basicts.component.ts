@@ -23,6 +23,7 @@ export class BasictsComponent {
     this.email="def@gmail.com"
     console.log(this.email);
   }*/
+  
   /*public color="green";
   public bgColor="yellow";
 
@@ -34,10 +35,11 @@ export class BasictsComponent {
   public color="red";
   public bgColor="grey";
   public mainDiv="blue"
+  public text='red';
 
   public moveColor(){
     this.color="grey"
     this.bgColor="red"
     this.mainDiv="blue";
-  }
+    this.text='grey'  }
 }
