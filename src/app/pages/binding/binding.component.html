@@ -1,0 +1,52 @@
+<h1>Property Binding</h1>
+<span [innerHTML]="title"></span>
+Frist name:<span [innerHTML]="fristname"></span>
+<img [src]="'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRWqtZ5OK0RhGk-7LHOLJF-xcVerP90rf0B1hCFqK52KgVFCGl'" [height]="200">
+
+
+
+                          <!-- Attribute Binding -->
+
+   <h1>Attribute Binding</h1> 
+   <table [attr.border]="bdr" height="100" width="200">        
+    <tr>
+        <td [attr.colspan]="cols">Student Details</td>
+        
+    </tr>    
+    
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Class</td>
+    </tr>    
+
+    <tr>
+        <td>021</td>
+        <td>Sunita</td>
+        <td>12</td>
+    </tr> 
+    </table>  
+    
+    
+
+                  <!-- Event Binding -->
+
+<h1>Event Binding</h1>
+<button (click)="valueshow()">click here</button><br>
+<button (click)="showdata()">click me</button>
+
+
+                  <!-- Two Way Data Binding -->
+
+<h1>Two Way Data Binding</h1>
+<!-- Enter Your Name: <input [value]='data' (input)='data=$event.target.value' ><br> -->
+Your Name : {{data}} <br/>
+<input [(ngModel)]='data1'>
+Entered value : {{data1}}
+
+
+
+   
+
+
+

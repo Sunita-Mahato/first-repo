@@ -1,8 +1,34 @@
-<h1>ngStyle</h1>
+<!-- <h1>ngStyle</h1>
 <ul *ngFor="let person of people">
     <li [ngStyle]="{'color':getColor(person.Country)}">
         {{person.name}} - ({{person.Country}})
     </li>
-</ul>
+</ul> -->
+
+
+
+<!-- <h1>Using ngClass as String</h1>
+<p [ngClass]="'two three'">Using ngClass with string example</p>
+<div *ngFor="let user of users" [ngClass]="'one four'">
+    {{user}}
+</div> -->/
+
+
+<h1>Using ngClass as Array</h1>
+<p [ngClass]="['two','three']">Using ngClass with array example</p>
+<div *ngFor="let user of users" [ngClass]="'one four'">
+    {{user}}
+</div>
+
+<p [ngClass]="{'two':true,'three':false}">Using ngClass as Object</p>
+<div [ngClass]="getcsscclass('mode')">
+    using ngClass with component method
+</div>
+
+
+                   <!-- Interpolation -->
+
+<h1>Employee name : {{empfirstname+ '  ' +emplastname}}</h1>
+<h2>{{a+b}}</h2>
 
 

@@ -15,6 +15,8 @@ import { Ifelsets1Component } from './pages/ifelsets1/ifelsets1.component';
 import { SwitchComponent } from './pages/switch/switch.component';
 import { ForComponent } from './pages/for/for.component';
 import { StyleComponent } from './pages/style/style.component';
+import { BindingComponent } from './pages/binding/binding.component';
+import { PipesComponent } from './pages/pipes/pipes.component';
 
 const routes: Routes = [
   {
@@ -61,8 +63,14 @@ const routes: Routes = [
   },
   {
     path:'style',component:StyleComponent
+  },
+  {
+    path:'binding',component:BindingComponent
+  },
+  {
+    path:'pipes',component:PipesComponent
   }
-];
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

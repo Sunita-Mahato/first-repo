@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import{ FormsModule}from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,10 @@ import { Ifelsets1Component } from './pages/ifelsets1/ifelsets1.component';
 import { SwitchComponent } from './pages/switch/switch.component';
 import { ForComponent } from './pages/for/for.component';
 import { StyleComponent } from './pages/style/style.component';
+import { BindingComponent } from './pages/binding/binding.component';
+import { PipesComponent } from './pages/pipes/pipes.component';
+import { MypipePipe } from './mypipe.pipe';
+
 
 @NgModule({
   declarations: [
@@ -38,11 +43,16 @@ import { StyleComponent } from './pages/style/style.component';
     Ifelsets1Component,
     SwitchComponent,
     ForComponent,
-    StyleComponent
+    StyleComponent,
+    BindingComponent,
+    PipesComponent,
+    MypipePipe,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

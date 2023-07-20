@@ -1,0 +1,105 @@
+<!-- Pipes -->
+
+<h1>Pipes</h1>
+<table [attr.border]="bdr" height="100" width="400">
+  <tr>
+    <td [attr.colspan]="cols"></td>
+  </tr>
+
+  <tr>
+    <th>Emp Code</th>
+    <th>Emp Name</th>
+    <th>Salary</th>
+    <th>Date of Birth</th>
+  </tr>
+  <tr *ngFor="let employee of employees">
+    <td>{{ employee.code }}</td>
+    <td>{{ employee.name | uppercase }}</td>
+    <td>{{ employee.salary | currency }}</td>
+    <td>{{ employee.dob}}</td>
+  </tr>
+</table>
+
+<!-- Parameterize Pipes  -->
+
+<h1>Parameterize Pipes</h1>
+<div>
+    {{dob}}<br/>
+    Medium:{{dob|date:"medium"}}<br/>
+    Specific formate : {{dob|date:"dd/MM/yyyy"}}<br/>
+    medium time : {{dob|date:"mediumTime"}}<br/>
+    Salary :-{{salary|currency:"USD":true}}
+</div>
+
+<!-- Chaining Pipes -->
+
+<h1>Chaining Pipes</h1>
+<div>
+    {{dob}}<br/>
+    Medium:{{dob|date:"medium"|uppercase}}<br/>
+    Specific formate : {{dob|date:"dd/MM/yyyy"}}<br/>
+    medium time : {{dob|date:"mediumTime"}}<br/>
+    fulldate : {{dob|date:"fullDate"|uppercase}}<br/>
+    Salary :-{{salary|currency:"USD":true}}
+</div>
+
+
+<!-- Pipes with string -->
+
+<h1> Pipes with string</h1>
+<h2>{{name|uppercase}}-{{position|lowercase}}</h2>
+<h3>{{work|titlecase}}</h3>
+<h2>slice example:-)</h2>
+<h3>{{work|slice:5}}</h3>
+<h3>{{work|slice:5:8}}</h3>
+
+
+<!-- date,percent,decimal,currency  -->
+
+<h1>date,percent,decimal,currency</h1>
+<h2>Date:-</h2>
+<h3>{{currentdate}}</h3>
+<h3>{{currentdate|date:'shortDate'}}</h3>
+<h3>{{currentdate|date:'longDate'}}</h3>
+<h3>{{currentdate|date:'fullDate'}}</h3>
+<h2>Percent:-</h2>
+<h3>{{mynumber}}</h3>
+<h3>{{mynumber|percent}}</h3>
+<h3>{{mynumber|percent:'2.4-8'}}</h3>
+<h2>Decimal:-</h2>
+<h3>{{mynumber}}</h3>
+<h3>{{mynumber|number}}</h3>
+<h3>{{mynumber|number:'2.4-8'}}</h3>
+<h2>currency:-</h2>
+<h3>{{mynumber}}</h3>
+<h3>{{mynumber|currency}}</h3>
+<h3>{{mynumber|currency:'INR'}}</h3>
+<h3>{{mynumber|currency:'INR':'code'}}</h3>
+
+
+<!-- json pipe -->
+
+<h1>json pipe</h1>
+<div>
+    {{employees1|json}}<br/>
+    {{employees1|slice:2:5|json}}
+</div>
+
+
+<!-- Custom pipe -->
+
+<h1>Custom pipe</h1>
+<table [attr.border]="bdr" height="200" width="400">
+    <tr *ngFor="let employees of employees2">
+        <td>{{employees.code}}</td>
+        <td>{{employees.name|mypipe:employees.gender}}</td>
+        <td>{{employees.gender}}</td>
+        <td>{{employees.salary}}</td>
+</tr>
+</table>
+
+
+
+
+
+
