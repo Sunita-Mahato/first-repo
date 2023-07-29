@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="main">
+    <table>
+        <thead>
+            <tr>
+                <th>PRICING TABLE</th>
+                <th>STARTED</th>
+                <th>BASIC</th>
+                <th>BUSINESS</th>
+                <th>PREMIUM</th>
+                <th>PRO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of data">
+                <td>{{element.pricing}}</td>
+                <td><div [innerHTML]="element.isStarted|mypipe2"></div></td>
+                <td><div [innerHTML]="element.isBasic|mypipe2"></div></td>
+                <td><div [innerHTML]="element.isBusiness|mypipe2"></div></td>
+                <td><div [innerHTML]="element.isPremium|mypipe2"></div></td>
+                <td><div [innerHTML]="element.isPro|mypipe2"></div></td>
+                </tr>
+        </tbody>
+    </table>
+</div>

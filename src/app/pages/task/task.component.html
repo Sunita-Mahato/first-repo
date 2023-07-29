@@ -1,0 +1,23 @@
+<div class="main">
+    <div class="column1" style="background-color:#aaa;">
+        <ul>
+            <li style="display: flex;" *ngFor="let person of people" (click) ="getPerson(person)"> 
+             Name: {{ person.name }}<br>
+             <!-- Price: {{person.price}}<br>
+             Description: {{person.description}} -->
+              
+            </li>
+           </ul>
+    </div>
+      <div class="column2" style="background-color:#bbb;">
+        <div class="mid" *ngIf="user"><img [src]="user.url" alt=""></div>
+        <div class="bottom" *ngIf="user">
+            <h1>Product Name:- {{user.name}}</h1>
+            <h2>Price:- {{user.price}}</h2>
+            <h3>Description:- {{user.description}}</h3>
+            
+            <button type="button">Details</button>
+        </div>
+      </div>
+    
+</div>

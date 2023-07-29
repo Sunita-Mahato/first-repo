@@ -17,6 +17,9 @@ import { ForComponent } from './pages/for/for.component';
 import { StyleComponent } from './pages/style/style.component';
 import { BindingComponent } from './pages/binding/binding.component';
 import { PipesComponent } from './pages/pipes/pipes.component';
+import { AformsComponent } from './pages/aforms/aforms.component';
+import { TableComponent } from './pages/table/table.component';
+import { TaskComponent } from './pages/task/task.component';
 
 const routes: Routes = [
   {
@@ -69,6 +72,15 @@ const routes: Routes = [
   },
   {
     path:'pipes',component:PipesComponent
+  },
+  {
+    path:'aforms',component:AformsComponent
+  },
+  {
+    path:'table',component:TableComponent
+  },
+  {
+    path:'task',component:TaskComponent
   }
   ];
 
