@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import{ FormsModule}from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +29,10 @@ import { MypipePipe2} from './mypipe2.pipe'
 import { AformsComponent } from './pages/aforms/aforms.component';
 import { TableComponent } from './pages/table/table.component';
 import { TaskComponent } from './pages/task/task.component';
+
+import { FormsComponent } from './pages/forms/forms.component';
+
+
 
 
 @NgModule({
@@ -55,12 +61,18 @@ import { TaskComponent } from './pages/task/task.component';
     AformsComponent,
     TableComponent,
     TaskComponent,
+   
+    FormsComponent,
+    
+   
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

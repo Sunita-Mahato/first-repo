@@ -21,6 +21,10 @@ import { AformsComponent } from './pages/aforms/aforms.component';
 import { TableComponent } from './pages/table/table.component';
 import { TaskComponent } from './pages/task/task.component';
 
+import { FormsComponent } from './pages/forms/forms.component';
+
+
+
 const routes: Routes = [
   {
     path:'',component:HomeComponent
@@ -46,6 +50,7 @@ const routes: Routes = [
   {
     path:'animation',component:AnimationComponent
   },
+  
   {
     path:'cupanimation',component:CupanimationComponent
   },
@@ -81,7 +86,12 @@ const routes: Routes = [
   },
   {
     path:'task',component:TaskComponent
+  },
+  
+  {
+    path:'forms',component:FormsComponent
   }
+ 
   ];
 
 @NgModule({
